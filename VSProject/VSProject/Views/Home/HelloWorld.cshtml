@@ -1,0 +1,12 @@
+﻿@model VSProject.Models.IHomeModel
+@using Glass.Mapper
+@using Glass.Mapper.Sc.Web.Mvc
+
+<div>
+    <p style="font-family:Arial; font-size:15px; color:gray">
+        @Html.Glass().Editable(x => x.Title)
+    </p>
+    <div>
+        @Html.Glass().RenderImage(x => x.Image, isEditable: true)
+    </div>
+</div>

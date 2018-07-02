@@ -1,0 +1,16 @@
+﻿@using Glass.Mapper.Sc.Web.Mvc
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body class="@(Sitecore.Context.PageMode.IsExperienceEditor ? "edit-mode" : string.Empty)">
+    <div class="container-fluid mainContainer">
+        @Html.Sitecore().Placeholder("page-layout")
+    </div>
+</body>
+</html>
+
